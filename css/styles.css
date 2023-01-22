@@ -80,13 +80,13 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 /*Logo*/
 
 .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
     border-bottom: 1px solid #E7E9FC;
 }
 
@@ -115,6 +115,7 @@ img {
 }
 
 .nav-wrapper {
+    display: flex;
     margin-right: auto;
 }
 
@@ -166,6 +167,10 @@ img {
 
 .portfolio-section {
     padding-top: 96px;
+}
+
+.portfolio-list {
+    row-gap: 48px;
 }
 
 .flex-button {
@@ -235,20 +240,16 @@ img {
 /*Studio page*/
 /*Hero*/
 
-.hero-container {
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
-
 .hero {
+    padding: 188px 0;
     background-color: var(--secondary-bgc-color);
 }
 
 .hero-title {
     width: 496px;
-    margin-bottom: 48px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 48px;
     padding: 0;
 
     color: var(--hero-text-color);
@@ -284,22 +285,23 @@ img {
 
 /*Benefits*/
 
+.benefits {
+    padding-bottom: 0;
+}
+
 .flex-list {
     display: flex;
-    row-gap: 48px;
     column-gap: 24px;
     flex-wrap: wrap;
 }
 
-.flex-width {
-    width: 264px;
-}
-
-.benefits-margin {
-    margin-bottom: 8px;
+.flex-item {
+    width: calc((100% - (24px * 3)) / 4);
 }
 
 .section-subtitle {
+    margin-bottom: 8px;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -330,14 +332,11 @@ img {
 /*Our team*/
 
 .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 32px;
     padding-bottom: 32px;
-    gap: 8px;
     border-radius: 0px 0px 4px 4px;
 
     background-color: var(--primary-bgc-color) ;
@@ -348,12 +347,10 @@ img {
 }
 
 .portfolio-card {
-            display: flex;
-            flex-direction: column;
             padding-left: 16px;
+            padding-right: 16px;
             padding-top: 32px;
             padding-bottom: 32px;
-            gap: 8px;
             border-bottom: 1px solid var(--footer-text-color);
             border-right: 1px solid var(--footer-text-color);
             border-left: 1px solid var(--footer-text-color);
