@@ -296,7 +296,7 @@ img {
 }
 
 .flex-item {
-    width: calc((100% - (24px * 3)) / 4);
+    flex-basis: calc((100% - (24px * 3)) / 4);
 }
 
 .section-subtitle {
